@@ -37,7 +37,7 @@ Array.from(titles).forEach(function(title){
   console.log(title);
 });
 
-// Tutorial 4
+// Tutorial 4 - The Query Selector
 
 const wmf = document.querySelector('#book-list li:nth-child(2).name');
 //console.log(wrap);
@@ -52,7 +52,7 @@ Array.from(books).forEach(fucntion(book){
   console.log(book);
 });
 
-// Tutorial 5
+// Tutorial 5 - Changing text and HTML Content
 
 Array.from(books).forEach(function(book){
   book.textContent += '(book title)';
