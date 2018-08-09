@@ -75,6 +75,14 @@ console.log('#page-banner has child nodes:', banner.hasChildNodes());
 const clonedBanner = banner.cloneNode(true);
 console.log(clonedBanner);
 
+// Tutorial 7 - Transversing the DOM Part 1
+
+const bookList = document.querySelector('#book-list');
+
+console.log('the parent node is:', bookList.parentNode);
+console.log('the parent element is:', bookList.parentElement.parentElement);
+
+console.log(bookList.children);
 
 
 
