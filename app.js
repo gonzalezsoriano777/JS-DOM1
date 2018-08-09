@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_EUDnXv
 var banner = document.getElementById('page-banner')
 var booklist = document.getElementById('book-list')
 
@@ -12,7 +11,6 @@ const search = document.getElementById('search-books');
 const bookList = document.getElementById('book-list');
 
 console.log(search, bookList);
-=======
 // Edited by me
 var titles = document.getElementsByClassName('title');
 
@@ -38,4 +36,19 @@ console.log(Array.isArray(Array.from(titles)));
 Array.from(titles).forEach(function(title){
   console.log(title);
 });
->>>>>>> .merge_file_qVGkTv
+
+// Tutorial 4
+
+const wmf = document.querySelector('#book-list li:nth-child(2).name');
+//console.log(wrap);
+
+var books = document.querySelector('#book-list li .name');
+//console.log(books);
+
+var books = document.querySelectorAll('#book-list li .name');
+console.log(books);
+
+Array.from(books).forEach(fucntion(book){
+  console.log(book);
+});
+
