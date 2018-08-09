@@ -1,4 +1,4 @@
-var banner = document.getElementById('page-banner')
+c9 var banner = document.getElementById('page-banner')
 var booklist = document.getElementById('book-list')
 
 bookList
@@ -51,4 +51,20 @@ console.log(books);
 Array.from(books).forEach(fucntion(book){
   console.log(book);
 });
+
+// Tutorial 5
+
+Array.from(books).forEach(function(book){
+  book.textContent += '(book title)';
+});
+
+const bookList = document.querySelector('#book-list');
+//bookList.innerHTML = '<h2>Book and more books...</h2>';
+bookList.innerHTML += '<p>This is how you add HTML</p>';
+
+
+
+
+
+
 
