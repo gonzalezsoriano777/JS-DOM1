@@ -118,7 +118,7 @@ link.addEventListener('click', fucntion(e){
 })
 
 
-// Tutorial 10 - Event Bubbling 
+// Tutorial 10 -- Event Bubbling
 
 
 //delete books
