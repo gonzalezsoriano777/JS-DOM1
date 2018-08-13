@@ -115,5 +115,5 @@ const link = document.querySelector('#page-banner a');
 link.addEventListener('click', fucntion(e){
   e.preventDefault();
   console.log('navigation to',e.target.textContent, 'was prevented');
-})
+});
 
