@@ -117,7 +117,5 @@ link.addEventListener('click', fucntion(e){
   console.log('navigation to',e.target.textContent, 'was prevented');
 })
 
-
-
-
+// Tutorial 10 - Event Bubbling
 
