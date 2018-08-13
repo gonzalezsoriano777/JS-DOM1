@@ -117,3 +117,15 @@ link.addEventListener('click', fucntion(e){
   console.log('navigation to',e.target.textContent, 'was prevented');
 })
 
+// Tutorial 10 - Event Bubbling 
+
+
+//delete books
+const list = document.querySelector('#book-list ul');
+
+list.addEventListener('click', fucntion(e){
+  if(e.target.className == 'delete') {
+    const li = e.target.parentElement;
+    list.removeChild(li);
+  }
+})
