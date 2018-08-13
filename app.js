@@ -111,11 +111,18 @@ Array.from(btns).forEach(function(btn) {
 });
 
 const link = document.querySelector('#page-banner a');
+<<<<<<< HEAD
 
 link.addEventListener('click', fucntion(e){
   e.preventDefault();
   console.log('navigation to',e.target.textContent, 'was prevented');
 })
 
+=======
+>>>>>>> lesson9
 
+link.addEventListener('click', fucntion(e){
+  e.preventDefault();
+  console.log('navigation to',e.target.textContent, 'was prevented');
+});
 
