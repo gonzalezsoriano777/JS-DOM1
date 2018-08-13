@@ -96,24 +96,5 @@ console.log('book-list next element sibling is:', bookList.previousElementSiblin
 
 bookList.previousElementSibling.querySelector('p').innerHTML += '<br/>Too cool for everyone else!';
 
-// Tutorial 9 - Events
 
-var btns = document.querySelectorAll('#book-list .delete');
-
-Array.from(btns).forEach(function(btn) {
-    btn.addEventListener('click',function(e){
-      
-      const li = e.target.parentElement;
-      
-      li.parentNode.removeChild(li)
-      
-    });
-});
-
-const link = document.querySelector('#page-banner a');
-
-link.addEventListener('click', fucntion(e){
-  e.preventDefault();
-  console.log('navigation to',e.target.textContent, 'was prevented');
-});
 
