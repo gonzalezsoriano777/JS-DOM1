@@ -156,15 +156,25 @@ const deleteBtn = document.createElement('span');
 deleteBtn.textContent = 'delete';
 bookName.textContent = value;
 
+// Tutorial 12...  13 - Styles & Classes
 
+// add classes
+bookName.classList.add ('name');//.remove to delete the class
+deleteBtn.classList.add('delete');
 
-
-
-  // append to document
+// append to document (This is from Tutorial 12 but classes is declared before this)
 li.appendChild(bookName);
 li.appendChild(deleteBtn);
-list.appendChild(li);
-
-
+list.appendChild(li);  
+  
+  
+  
+  
+  
+  
 });
+
+
+
+
 
