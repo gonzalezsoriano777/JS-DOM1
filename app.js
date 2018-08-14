@@ -167,12 +167,15 @@ li.appendChild(bookName);
 li.appendChild(deleteBtn);
 list.appendChild(li);  
   
-  
-  
-  
-  
-  
 });
+
+// Tutorial 14 - Attributes
+
+// Neccessarly, it was an overall understanding of what Attributes are.
+// As well as How to find one, remove one, and even add one.
+
+
+
 
 
 
