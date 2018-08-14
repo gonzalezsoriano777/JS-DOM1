@@ -176,7 +176,42 @@ list.appendChild(li);
 
 
 
+// Tutorial 11.. 15 - Checkboxes & Change Events
 
+//delete books
+const list = document.querySelector('#book-list ul');
+>>>>>>> lesson10
+
+list.addEventListener('click', fucntion(e){
+  if(e.target.className == 'delete') {
+    const li = e.target.parentElement;
+    list.removeChild(li);
+  }
+})
+
+// Tutorial 11 was added here since hiding books is connected to adding and deleting them
+
+// add book-list
+
+const addForms = document.forms('add-book');
+
+addForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  const value = addForm.querySelector('input[type="text"]').value;
+  console.log(value);
+  
+// hide books 
+
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
+  if(hideBox.checked){
+    list.style.display = "none";
+  }else {
+    list.style.display = "none"
+  }else {
+    list.style.display = "initial"
+  }
+});
 
 
 
