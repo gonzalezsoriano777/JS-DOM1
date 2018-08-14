@@ -189,7 +189,7 @@ list.addEventListener('click', fucntion(e){
   }
 })
 
-// Tutorial 11 was added here since hiding books is connected to adding and deleting them
+// --Tutorial 11 was added here since hiding books is connected to adding and deleting them
 
 // add book-list
 
@@ -212,6 +212,25 @@ hideBox.addEventListener('change', function(e){
     list.style.display = "initial"
   }
 });
+
+// Tutorial  11... 16 - Custom Search Filter
+
+//filter books
+const searchBar = document.forms['search-books'].querySelector('input');
+searchBar.addEventListener('keyup', function(e){
+  const term = e.target.value.toLowerCase();
+  const books = list.getElementsByTagName('li');
+  Array.from(books).forEach(function(book) {
+      const title = book.firstElementChild.textContent;
+      if(title.toLowerCase().indexOf(term) !=-1){
+        book.style.display = 'block';
+      }else {
+        book.style.display = 'none';
+        
+      }
+  })
+})
+
 
 
 
