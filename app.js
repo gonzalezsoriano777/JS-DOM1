@@ -231,7 +231,23 @@ searchBar.addEventListener('keyup', function(e){
   })
 })
 
+// Tutorial 11.. 17 - Tabbed Content
 
+// tabbed content
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel')
+tabs.addEventListener('click', function(e) {
+    id(e.target.tagName == "LI") {
+      const targetPanel = document.querySelector(e.target.dataset.target);
+      panels.forEach(function(panel){
+        if(panel == targetPanel){
+          panel.classList.add('active');
+        }else{
+          panel.classList.remove('active');
+        }
+      })
+    }
+})
 
 
 
